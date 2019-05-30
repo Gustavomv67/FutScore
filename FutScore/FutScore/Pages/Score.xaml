@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FutScore.Pages.Score">
+    <ContentPage.Content>
+        <StackLayout Spacing="20">
+            <Label Text="FutScore"
+                               Font="30"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold">
+            </Label>
+            <Label Text="Resultado"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="Center">
+            </Label>
+            <ListView x:Name="ResultadoLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="GolLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="CartaoLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="FaltaLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="PenaltiLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="EscanteioLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="EscalacaoLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="SubstituicaoLista" Margin="5">
+                HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FutScore.Pages.FutScore">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Spacing="20">
+                    <Label Text="FutScore"
+                               Font="30"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold">
+                    </Label>
+                    <Label Text="Jogos"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="Center">
+                    </Label>
+                    <ListView x:Name="ResultadoLista" ItemSelected="Resultado_ItemSelected" SelectedItem="{Binding Id}" Margin="5"> 
+                              HasUnevenRows="True" 
+                              SeparatorVisibility="Default" 
+                              SeparatorColor="Black">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell  Text="{Binding Title}" 
+                                            Detail="{Binding Text}" 
+                                            TextColor="Black" DetailColor="Black"/>
+                                />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

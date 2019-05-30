@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using FutScore.Pages;
 using Xamarin.Forms;
 
 namespace FutScore
@@ -13,7 +13,7 @@ namespace FutScore
 		{
 			InitializeComponent();
 
-			MainPage = new FutScore.MainPage();
+            MainPage = new NavigationPage(new Login());
 		}
 
 		protected override void OnStart ()

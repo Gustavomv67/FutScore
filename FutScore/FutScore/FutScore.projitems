@@ -9,8 +9,12 @@
     <Import_RootNamespace>FutScore</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -19,5 +23,58 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Cartao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\CartaoTipo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Equipe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Escalacao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Escanteio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Falta.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Gols.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Jogador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Jogo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Penalti.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Posicoes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Resultado.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Substituicao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Cadastro.xaml.cs">
+      <DependentUpon>Cadastro.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\FutScore.xaml.cs">
+      <DependentUpon>FutScore.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Modelos\Usuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Score.xaml.cs">
+      <DependentUpon>Score.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Cadastro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\FutScore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Score.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FutScore.Pages.Login"
+             Title="Login">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Spacing="20">
+                    <Label Text="FutScore"
+                               Font="30"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold">
+                    </Label>
+                    <Label Text="Digite seu email e sua senha"
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="Center">
+                    </Label>
+                    <Entry x:Name="EmailEntry"
+                               Placeholder="Digite seu Email"
+                               Keyboard="Email"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="FillAndExpand">
+                    </Entry>
+                    <Entry x:Name="SennhaEntry"
+                               Placeholder="Digite sua senha"
+                               IsPassword="True"
+                               VerticalOptions="FillAndExpand"
+                               HorizontalOptions="FillAndExpand">
+                    </Entry>
+                </StackLayout>
+                <ActivityIndicator x:Name="waitActivityIndicator"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand">
+                </ActivityIndicator>
+                <Button x:Name="LoginButton"
+                        BackgroundColor="Blue"
+                        Text="Entrar"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">
+                </Button>
+                <Button x:Name="RegisterButton"
+                        BackgroundColor="Blue"
+                        Text="Registrar  "
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
